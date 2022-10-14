@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/imagenes/favicon.png" type="image/x-icon">
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="style.css">            
+        <title>Encriptador de Texto Alura</title>        
+    </head>    
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img class="logoimg" src="imagenes/Vector.png" alt="Logo Alura"> 
+                <h1 class="tittle">Encriptador de mensajes</h1>           
+            </div>
+
+            <div class="left">
+                <input class= "text-input"type="text" id="textoEncriptado" placeholder="Ingrese un texto para encriptar aquí">
+            </div>           
+
+            <div class="right"> 
+                <img  id="imgDer" src="imagenes/imagen.png" alt="Ilustracion"> 
+                <h1 id="texto-debajo-imagen">Ningun mensaje fue encontrado</h1>
+                <textarea name="resultado" id = "textoDesencriptado" cols="30" rows="10"></textarea>
+                <button type="button" id="botonCopiar" onclick="copiar()">Copiar</button>                
+            </div>
+
+            <div class=" left-button">                
+                <p id="texto3">&#10033 Solo minusculas y sin acentos</p>
+                <button type="button" id="botonEncriptado" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="botonDesencriptado" onclick="desencriptar()">Desencriptar</button>                           
+            </div>                  
+                  
+        </div>
+        <footer class = "footer">
+             <h3>Desarrollado por Araceli Fernández - Alura Challenge 2022</h3>
+         </footer> 
+         <script type="text/javascript" src="script.js"></script> 
+    </body>  
+</html>
